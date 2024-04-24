@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link rel="stylesheet" href="../css/style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="../img/logo.jpg">
+<title>Menu</title>
+</head>
+<body>
+    <div id="header-placeholder"></div>
+<!-- home page starts here -->
+
+<section class="menu-section">
+    <h1>Our Menu</h1>
+    <div class="menu-selection">
+        <button id="human-food-btn">Human Food</button>
+        <button id="cat-food-btn">Cat Food</button>
+    </div>
+    <div id="human-food" class="menu-content hidden">
+        <h2>For Humans</h2>
+        <ul>
+            <li>
+                <img src="../img/coffee.JPG" alt="Coffee">
+                Coffee - $3
+            </li>
+            <li>
+                <img src="../img/tea.JPG" alt="Tea">
+                Tea - $2
+            </li>
+            <li>
+                <img src="../img/sandwich.jpg" alt="Sandwich">
+                Sandwich - $5
+            </li>
+            <li>
+                <img src="../img/salad.jpg" alt="Salad">
+                Salad - $4
+            </li>
+            <li>
+                <img src="../img/cake.jpg" alt="Cake">
+                Cake - $4
+            </li>
+        </ul>
+    </div>
+    <div id="cat-food" class="menu-content hidden">
+        <h2>For Cats</h2>
+        <ul>
+            <li>
+                <img src="../img/tuna.JPG" alt="Tuna Bites">
+                Tuna Bites - $2
+            </li>
+            <li>
+                <img src="../img/jerky.JPG" alt="Chicken Jerky">
+                Chicken Jerky - $3
+            </li>
+            <li>
+                <img src="../img/catnips.JPG" alt="Catnip Snacks">
+                Catnip Snacks - $1.5
+            </li>
+            <li>
+                <img src="../img/pate.JPG" alt="Salmon Pâté">
+                Salmon Pâté - $4
+            </li>
+        </ul>
+    </div>
+<!-- Order Modal -->
+<div id="order-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Place Your Order</h2>
+      <form id="order-form">
+        <input type="text" id="item-name" name="item-name" readonly>
+        <div class="order-details">
+          <input type="number" id="quantity" name="quantity" min="1" placeholder="Quantity" required>
+          <input type="text" id="total" name="total" placeholder="Total" readonly>
+        </div>
+        <button type="submit">Order Now</button>
+      </form>
+    </div>
+  </div>
+  
+  
+</section>
+
+
+<div id="footer-placeholder"></div>
+
+
+<script src="../js/script.js"></script>
+</body>
+</html>
